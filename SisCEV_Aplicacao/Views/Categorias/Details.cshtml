@@ -1,0 +1,48 @@
+﻿@model SisCEV_Modelo.Tabelas.Categoria
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "SisCEV - Detalhes da Categoria";
+}
+
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        Detalhes da Categoria
+    </div>
+    <div class="panel-body">
+        <div class="form-group">
+            @Html.LabelFor(model => model.Nome)
+            <br />
+        </div>
+        <div class="input-group">
+            <span class="input-group-addon">
+                <i class="glyphicon glyphicon-user"></i>
+            </span>
+            @Html.EditorFor(model => model.Nome, new { htmlAttributes = new { @class = "form-control", disabled = "disabled" } })
+            <br />
+        </div>
+    </div>
+    <div class="panel-footer panel-info">
+        @Html.ActionLink("Alterar", "Edit", new { id = Model.CategoriaId }, new { @class = "btn btn-primary" })
+        @Html.ActionLink("Retornar para a listagem", "Index", null, new { @class = "btn btn-warning" })
+    </div>
+</div>
+
+@Html.Partial("~/Views/Produtos/_PorCategoria.cshtml", Model.Produtos.ToList())
+
+@section styles{<link href="@Url.Content("~/Content/DataTables/css/dataTables.bootstrap.css")" rel="stylesheet" />}
+@section ScriptPage{
+    <script src="@Url.Content("~/Scripts/DataTables/jquery.dataTables.js")"></script>
+    <script src="@Url.Content("~/Scripts/DataTables/dataTables.bootstrap.js")"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.table').dataTable({
+                "order": [[0, "asc"]]
+            });
+        });
+        $(document).ready(function () {
+            $('li').removeClass("active");
+            $('#liCategorias').addClass("active");
+        });
+    </script>
+}

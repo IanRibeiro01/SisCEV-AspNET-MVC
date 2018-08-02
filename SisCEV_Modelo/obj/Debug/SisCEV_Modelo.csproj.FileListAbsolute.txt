@@ -1,0 +1,6 @@
+C:\Users\Ian Ribeiro\source\repos\SisCEV\SisCEV_Aplicacao\SisCEV_Modelo\bin\Debug\SisCEV_Modelo.dll
+C:\Users\Ian Ribeiro\source\repos\SisCEV\SisCEV_Aplicacao\SisCEV_Modelo\bin\Debug\SisCEV_Modelo.pdb
+C:\Users\Ian Ribeiro\source\repos\SisCEV\SisCEV_Aplicacao\SisCEV_Modelo\obj\Debug\SisCEV_Modelo.csprojResolveAssemblyReference.cache
+C:\Users\Ian Ribeiro\source\repos\SisCEV\SisCEV_Aplicacao\SisCEV_Modelo\obj\Debug\SisCEV_Modelo.csproj.CoreCompileInputs.cache
+C:\Users\Ian Ribeiro\source\repos\SisCEV\SisCEV_Aplicacao\SisCEV_Modelo\obj\Debug\SisCEV_Modelo.dll
+C:\Users\Ian Ribeiro\source\repos\SisCEV\SisCEV_Aplicacao\SisCEV_Modelo\obj\Debug\SisCEV_Modelo.pdb
