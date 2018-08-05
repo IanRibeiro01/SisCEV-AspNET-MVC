@@ -157,3 +157,4 @@ C:\Users\Ian Ribeiro\source\repos\SisCEV-AspNET-MVC\SisCEV_Aplicacao\obj\Debug\S
 C:\Users\Ian Ribeiro\source\repos\SisCEV-AspNET-MVC\SisCEV_Aplicacao\obj\Debug\SisCEV_Aplicacao.csproj.CopyComplete
 C:\Users\Ian Ribeiro\source\repos\SisCEV-AspNET-MVC\SisCEV_Aplicacao\obj\Debug\SisCEV_Aplicacao.dll
 C:\Users\Ian Ribeiro\source\repos\SisCEV-AspNET-MVC\SisCEV_Aplicacao\obj\Debug\SisCEV_Aplicacao.pdb
+C:\Users\Ian Ribeiro\source\repos\SisCEV-AspNET-MVC\SisCEV_Aplicacao\bin\SisCEV_Servico.dll.config

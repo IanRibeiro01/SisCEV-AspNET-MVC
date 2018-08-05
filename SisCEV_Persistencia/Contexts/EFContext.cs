@@ -6,6 +6,7 @@ using System.Data.Entity;
 using SisCEV_Modelo.Cadastros;
 using SisCEV_Modelo.Tabelas;
 using System.Data.Entity.ModelConfiguration.Conventions;
+using SisCEV_Persistencia.Migrations;
 
 namespace SisCEV_Persistencia.Contexts
 {
@@ -14,7 +15,7 @@ namespace SisCEV_Persistencia.Contexts
         public EFContext(): base("Asp_Net_MVC_CS")
         {
             Database.SetInitializer<EFContext>
-                (new DropCreateDatabaseIfModelChanges<EFContext>());
+                (new MigrateDatabaseToLatestVersion<EFContext, Configuration>());
         }
 
         //Sobrescrever método para regularizar problema de pluralização (ex: Produto = Produtoes)

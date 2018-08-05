@@ -11,7 +11,7 @@ namespace SisCEV_Modelo.Tabelas
     {
         [Key]
         [Display(Name = "Id")]
-        public int CategoriaId { get; set; }
+        public int? CategoriaId { get; set; }
 
         [Display(Name = "Nome")]
         public string Nome { get; set; }

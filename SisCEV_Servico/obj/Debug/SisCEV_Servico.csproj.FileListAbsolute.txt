@@ -26,3 +26,6 @@ C:\Users\Ian Ribeiro\source\repos\SisCEV-AspNET-MVC\SisCEV_Servico\obj\Debug\Sis
 C:\Users\Ian Ribeiro\source\repos\SisCEV-AspNET-MVC\SisCEV_Servico\obj\Debug\SisCEV_Servico.csproj.CopyComplete
 C:\Users\Ian Ribeiro\source\repos\SisCEV-AspNET-MVC\SisCEV_Servico\obj\Debug\SisCEV_Servico.dll
 C:\Users\Ian Ribeiro\source\repos\SisCEV-AspNET-MVC\SisCEV_Servico\obj\Debug\SisCEV_Servico.pdb
+C:\Users\Ian Ribeiro\source\repos\SisCEV-AspNET-MVC\SisCEV_Servico\bin\Debug\SisCEV_Servico.dll.config
+C:\Users\Ian Ribeiro\source\repos\SisCEV-AspNET-MVC\SisCEV_Servico\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Ian Ribeiro\source\repos\SisCEV-AspNET-MVC\SisCEV_Servico\bin\Debug\EntityFramework.SqlServer.xml

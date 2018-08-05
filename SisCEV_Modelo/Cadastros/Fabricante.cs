@@ -10,7 +10,7 @@ namespace SisCEV_Modelo.Cadastros
     {
         [Key]
         [Display(Name = "Id")]
-        public int FabricanteId { get; set; }
+        public int? FabricanteId { get; set; }
 
         [Display(Name = "Nome")]
         public string Nome { get; set; }
