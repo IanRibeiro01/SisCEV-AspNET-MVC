@@ -14,6 +14,7 @@ namespace SisCEV_Modelo.Tabelas
         public int? CategoriaId { get; set; }
 
         [Display(Name = "Nome")]
+        [Required(ErrorMessage = "Nome da Categoria é Obrigatório")]
         public string Nome { get; set; }
 
         public virtual ICollection<Produto> Produtos { get; set; }

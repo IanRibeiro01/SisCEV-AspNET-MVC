@@ -10,6 +10,8 @@ namespace SisCEV_Persistencia.Migrations
         public Configuration()
         {
             AutomaticMigrationsEnabled = true;
+            //Atribuir true quando modificar modelo, após execução atribuir false  
+            AutomaticMigrationDataLossAllowed = false;
         }
 
         protected override void Seed(SisCEV_Persistencia.Contexts.EFContext context)

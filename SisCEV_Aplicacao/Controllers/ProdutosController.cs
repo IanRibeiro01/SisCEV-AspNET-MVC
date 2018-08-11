@@ -51,6 +51,7 @@ namespace SisCEV_Aplicacao.Controllers
             }
             else
             {
+                //Ultimo parâmetro identifica qual estará selecionado através do ID
                 ViewBag.CategoriaId = new SelectList(categoriaServico.ObterTodasCategoriasPorNome(),
                     "CategoriaId", "Nome", produto.CategoriaId);
                 ViewBag.FabricanteId = new SelectList(fabricanteServico.ObterTodosFabricantesPorNome(),
@@ -68,6 +69,7 @@ namespace SisCEV_Aplicacao.Controllers
                     produtoServico.GravarProduto(produto);
                     return RedirectToAction("Index");
                 }
+                PopularViewBag(produto);
                 return View(produto);
             }
             catch

@@ -14,15 +14,22 @@ namespace SisCEV_Modelo.Cadastros
         public int? ProdutoID { get; set; }
 
         [Display(Name ="Nome")]
+        [Required(ErrorMessage = "Nome do Produto é Obrigatório")]
         public string Nome { get; set; }
 
-        public int? CategoriaId { get; set; }
-        public int? FabricanteId { get; set; }
+        [Display(Name ="Data")]
+        [DataType(DataType.Date)]
+        [Required(ErrorMessage = "Data de Cadastro do Produto de ser Informada")]
+        public DateTime? DataCadastro { get; set; }
 
         [Display(Name = "Categoria")]
-        public Categoria Categoria { get; set; }
+        public int? CategoriaId { get; set; }
 
         [Display(Name = "Fabricante")]
+        public int? FabricanteId { get; set; }
+
+        public Categoria Categoria { get; set; }
         public Fabricante Fabricante { get; set; }
+
     }
 }

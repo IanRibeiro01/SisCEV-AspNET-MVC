@@ -13,6 +13,7 @@ namespace SisCEV_Modelo.Cadastros
         public int? FabricanteId { get; set; }
 
         [Display(Name = "Nome")]
+        [Required(ErrorMessage = "Nome do Fabricante é Obrigatório")]
         public string Nome { get; set; }
 
         public virtual ICollection<Produto> Produtos { get; set; }
