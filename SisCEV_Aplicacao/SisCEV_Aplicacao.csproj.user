@@ -20,6 +20,7 @@
     <WebStackScaffolding_ViewDialogWidth>600</WebStackScaffolding_ViewDialogWidth>
     <ProjectView>ProjectFiles</ProjectView>
     <WebStackScaffolding_DbContextTypeFullName>SisCEV_Aplicacao.Contexts.EFContext</WebStackScaffolding_DbContextTypeFullName>
+    <WebStackScaffolding_AreaDialogWidth>600</WebStackScaffolding_AreaDialogWidth>
   </PropertyGroup>
   <ProjectExtensions>
     <VisualStudio>

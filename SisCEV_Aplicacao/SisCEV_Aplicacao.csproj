@@ -274,6 +274,8 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Areas\Cadastros\Views\web.config" />
+    <Content Include="Areas\Tabelas\Views\web.config" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -315,9 +317,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\CategoriasController.cs" />
-    <Compile Include="Controllers\FabricantesController.cs" />
-    <Compile Include="Controllers\ProdutosController.cs" />
+    <Compile Include="Areas\Cadastros\CadastrosAreaRegistration.cs" />
+    <Compile Include="Areas\Tabelas\TabelasAreaRegistration.cs" />
+    <Compile Include="Areas\Tabelas\Controllers\CategoriasController.cs" />
+    <Compile Include="Areas\Cadastros\Controllers\FabricantesController.cs" />
+    <Compile Include="Areas\Cadastros\Controllers\ProdutosController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -326,16 +330,16 @@
   <ItemGroup>
     <Content Include="Views\web.config" />
     <None Include="packages.config" />
-    <Content Include="Views\Categorias\Index.cshtml" />
-    <Content Include="Views\Categorias\Create.cshtml" />
-    <Content Include="Views\Categorias\Edit.cshtml" />
-    <Content Include="Views\Categorias\Details.cshtml" />
-    <Content Include="Views\Categorias\Delete.cshtml" />
-    <Content Include="Views\Fabricantes\Index.cshtml" />
-    <Content Include="Views\Fabricantes\Create.cshtml" />
-    <Content Include="Views\Fabricantes\Details.cshtml" />
-    <Content Include="Views\Fabricantes\Edit.cshtml" />
-    <Content Include="Views\Fabricantes\Delete.cshtml" />
+    <Content Include="Areas\Tabelas\Views\Categorias\Index.cshtml" />
+    <Content Include="Areas\Tabelas\Views\Categorias\Create.cshtml" />
+    <Content Include="Areas\Tabelas\Views\Categorias\Edit.cshtml" />
+    <Content Include="Areas\Tabelas\Views\Categorias\Details.cshtml" />
+    <Content Include="Areas\Tabelas\Views\Categorias\Delete.cshtml" />
+    <Content Include="Areas\Cadastros\Views\Fabricantes\Index.cshtml" />
+    <Content Include="Areas\Cadastros\Views\Fabricantes\Create.cshtml" />
+    <Content Include="Areas\Cadastros\Views\Fabricantes\Details.cshtml" />
+    <Content Include="Areas\Cadastros\Views\Fabricantes\Edit.cshtml" />
+    <Content Include="Areas\Cadastros\Views\Fabricantes\Delete.cshtml" />
     <Content Include="Scripts\umd\popper.min.js.map" />
     <Content Include="Scripts\umd\popper.js.map" />
     <Content Include="Scripts\umd\popper-utils.min.js.map" />
@@ -347,17 +351,17 @@
     <Content Include="Scripts\popper-utils.js.map" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
-    <Content Include="Views\Produtos\Index.cshtml" />
-    <Content Include="Views\Produtos\Create.cshtml" />
-    <Content Include="Views\Produtos\Edit.cshtml" />
-    <Content Include="Views\Produtos\Details.cshtml" />
-    <Content Include="Views\Produtos\Delete.cshtml" />
-    <Content Include="Views\Produtos\_PorFabricante.cshtml" />
-    <Content Include="Views\Produtos\_PorCategoria.cshtml" />
-    <Content Include="Views\Produtos\_PartialDetailsContentPanel.cshtml" />
-    <Content Include="Views\Fabricantes\_PartialDetailsContentPanel.cshtml" />
-    <Content Include="Views\Categorias\_PartialDetailsContentPanel.cshtml" />
-    <Content Include="Views\Produtos\_PartialCreateContentPanel.cshtml" />
+    <Content Include="Areas\Cadastros\Views\Produtos\Index.cshtml" />
+    <Content Include="Areas\Cadastros\Views\Produtos\Create.cshtml" />
+    <Content Include="Areas\Cadastros\Views\Produtos\Edit.cshtml" />
+    <Content Include="Areas\Cadastros\Views\Produtos\Details.cshtml" />
+    <Content Include="Areas\Cadastros\Views\Produtos\Delete.cshtml" />
+    <Content Include="Areas\Cadastros\Views\Produtos\_PorFabricante.cshtml" />
+    <Content Include="Areas\Cadastros\Views\Produtos\_PorCategoria.cshtml" />
+    <Content Include="Areas\Cadastros\Views\Produtos\_PartialDetailsContentPanel.cshtml" />
+    <Content Include="Areas\Cadastros\Views\Fabricantes\_PartialDetailsContentPanel.cshtml" />
+    <Content Include="Areas\Tabelas\Views\Categorias\_PartialDetailsContentPanel.cshtml" />
+    <Content Include="Areas\Cadastros\Views\Produtos\_PartialCreateContentPanel.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -373,6 +377,11 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\Cadastros\Models\" />
+    <Folder Include="Areas\Cadastros\Views\Shared\" />
+    <Folder Include="Areas\Tabelas\Models\" />
+    <Folder Include="Areas\Tabelas\Views\Shared\" />
+    <Folder Include="Controllers\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
