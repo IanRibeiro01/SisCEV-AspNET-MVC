@@ -348,8 +348,10 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Cadastros\CadastrosAreaRegistration.cs" />
+    <Compile Include="Areas\Seguranca\Models\Papel.cs" />
     <Compile Include="Areas\Seguranca\Models\Usuario.cs" />
     <Compile Include="Areas\Seguranca\SegurancaAreaRegistration.cs" />
     <Compile Include="Areas\Tabelas\TabelasAreaRegistration.cs" />
@@ -360,6 +362,8 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Infraestrutura\GerenciadorPapel.cs" />
+    <Compile Include="Infraestrutura\GerenciadorUsuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
