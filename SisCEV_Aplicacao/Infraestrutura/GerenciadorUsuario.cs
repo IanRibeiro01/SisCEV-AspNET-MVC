@@ -8,6 +8,7 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using SisCEV_Aplicacao.DAL;
 using SisCEV_Aplicacao.Areas.Seguranca.Models;
+using System.Security.Principal;
 
 namespace SisCEV_Aplicacao.Infraestrutura
 {
@@ -21,6 +22,11 @@ namespace SisCEV_Aplicacao.Infraestrutura
             IdentityDbContextAplicacao db = context.Get<IdentityDbContextAplicacao>();
             GerenciadorUsuario manager = new GerenciadorUsuario(new UserStore<Usuario>(db));
             return manager;
+        }
+
+        internal IdentityResult Create(IPrincipal user, string senha)
+        {
+            throw new NotImplementedException();
         }
     }
 }
