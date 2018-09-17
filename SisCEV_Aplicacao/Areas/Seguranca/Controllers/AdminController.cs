@@ -31,7 +31,7 @@ namespace SisCEV_Aplicacao.Areas.Seguranca.Controllers
             if (ModelState.IsValid)
             {
                 Usuario user = new Usuario { UserName = model.Nome, Email = model.Email };
-                IdentityResult result = GerenciadorUsuario.Create(User, model.Senha);
+                IdentityResult result = GerenciadorUsuario.Create(user, model.Senha);
                 if (result.Succeeded)
                 {
                     return RedirectToAction("Index");

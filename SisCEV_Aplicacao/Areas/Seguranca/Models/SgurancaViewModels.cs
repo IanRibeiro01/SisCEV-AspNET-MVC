@@ -11,6 +11,7 @@ namespace SisCEV_Aplicacao.Areas.Seguranca.Models
         public string Id { get; set; }
 
         [Required]
+        [Display(Name = "Nome de Usuário")]
         public string Nome { get; set; }
 
         [Required]

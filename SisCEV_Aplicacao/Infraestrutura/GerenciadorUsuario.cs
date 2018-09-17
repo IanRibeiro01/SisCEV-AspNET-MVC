@@ -16,17 +16,12 @@ namespace SisCEV_Aplicacao.Infraestrutura
     {
         public GerenciadorUsuario(IUserStore<Usuario> store) : base(store) { }
 
-        public static GerenciadorUsuario Create
-            (IdentityFactoryOptions<GerenciadorUsuario> options, IOwinContext context)
+        public static GerenciadorUsuario Create(IdentityFactoryOptions<GerenciadorUsuario> options, IOwinContext context)
         {
             IdentityDbContextAplicacao db = context.Get<IdentityDbContextAplicacao>();
             GerenciadorUsuario manager = new GerenciadorUsuario(new UserStore<Usuario>(db));
             return manager;
         }
 
-        internal IdentityResult Create(IPrincipal user, string senha)
-        {
-            throw new NotImplementedException();
-        }
     }
 }
