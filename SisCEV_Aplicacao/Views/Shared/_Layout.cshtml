@@ -6,44 +6,53 @@
     <title>@ViewBag.Title</title>
     <link href="@Url.Content("~/Content/bootstrap.css")" rel="stylesheet" />
     @RenderSection("styles", false)
+    <style>
+        html {
+            height: 100%;
+        }
+        body {
+            min-height: 100%;
+            display: grid;
+            grid-template-rows: 1fr auto;
+        }
+        .footer {
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+    </style>
 </head>
 <body>
-
-    <div class="container">
-
-        <div class="row">
-            <div class="page-header bg-danger">
-                <h1>
-                    SisCEV <small class="text-danger"> Sistema de Controle de Estoque e Vendas</small>
-                </h1>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-xs-3 col-md-3 bg-success">
-                <ul class="nav nav-pills nav-stacked">
-                    <li id="liHome" role="presentation" class=""><a href="#">Home</a></li>
-                    <li id="liProdutos" role="presentation">@Html.ActionLink("Produtos", "Index", "Produtos")</li>
-                    <li id="liFabricantes" role="presentation">@Html.ActionLink("Fabricantes", "Index", "Fabricantes")</li>
-                    <li id="liCategorias" role="presentation">@Html.ActionLink("Categorias", "Index", "Categorias")</li>
+    <div class="content">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="@Url.Action("Index", "Produtos", new { area = "Cadastros" }, null)">SisCEV</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li id="liProdutos" role="presentation">@Html.ActionLink("Produtos", "Index", "Produtos", new { area = "Cadastros" }, null)</li>
+                    <li id="liFabricantes" role="presentation">@Html.ActionLink("Fabricantes", "Index", "Fabricantes", new { area = "Cadastros" }, null)</li>
+                    <li id="liCategorias" role="presentation">@Html.ActionLink("Categorias", "Index", "Categorias", new { area = "Tabelas" }, null)</li>
+                    <li id="liUsuarios" role="presentation">@Html.ActionLink("Usuários", "Index", "Admin", new { area = "Seguranca" },null)</li>
                 </ul>
+                @*<button class="btn btn-danger navbar-btn">Button</button>*@
             </div>
-            <div class="col-xs-9 col-md-9">
-                <br />
-                @RenderBody()
-            </div>
-        </div>
+        </nav>
 
-        <br />
-
-        <div class="row">
-            <div class="col-xs-12 col-md-12 bg-danger">
-                <small>SisCEV 2018</small>
-            </div>
+        <div class="container">
+            @RenderBody()
         </div>
 
     </div>
-
+    <!-- Footer -->
+    <div class="footer" style="background-color:#222;">>
+            <br />
+            <div class="footer-copyright text-center py-3">
+                © 2018 Copyright:
+                <a href="https://github.com/RibeiroIan7/" target="_blank" style="color:#9d9d9d;">Ian Ribeiro</a>
+            </div>
+            <br />
+    </div>
+    <!-- Footer -->
     <script src="@Url.Content("~/Scripts/jquery-1.10.2.js")"></script>
     <script src="@Url.Content("~/Scripts/bootstrap.js")"></script>
     @RenderSection("ScriptPage", false)

@@ -16,12 +16,14 @@ namespace SisCEV_Aplicacao.Areas.Tabelas.Controllers
         private CategoriaServico categoriaServico = new CategoriaServico();
 
         // Listar
+        [Authorize]
         public ActionResult Index()
         {
             return View(categoriaServico.ObterTodasCategoriasPorNome());
         }
 
         //Obter Visão do Categoria
+        [Authorize]
         private ActionResult ObterVisaoCategoriaPorId(int? id)
         {
             if (id == null)
@@ -37,6 +39,7 @@ namespace SisCEV_Aplicacao.Areas.Tabelas.Controllers
         }
 
         //Criar e Editar Fabricante
+        [Authorize]
         private ActionResult GravarCategoria(Categoria categoria)
         {
             try
@@ -55,12 +58,14 @@ namespace SisCEV_Aplicacao.Areas.Tabelas.Controllers
         }
 
         //Criar
+        [Authorize]
         [HttpGet]
         public ActionResult Create()
         {
             return View();
         }
 
+        [Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create(Categoria categoria)
@@ -69,11 +74,13 @@ namespace SisCEV_Aplicacao.Areas.Tabelas.Controllers
         }
 
         //Editar
+        [Authorize]
         public ActionResult Edit(int? id)
         {
             return ObterVisaoCategoriaPorId(id);
         }
 
+        [Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit(Categoria categoria)
@@ -82,17 +89,20 @@ namespace SisCEV_Aplicacao.Areas.Tabelas.Controllers
         }
 
         //Detalhes
+        [Authorize]
         public ActionResult Details(int? id)
         {
             return ObterVisaoCategoriaPorId(id);
         }
 
         //Deletar
+        [Authorize]
         public ActionResult Delete (int? id)
         {
             return ObterVisaoCategoriaPorId(id);
         }
 
+        [Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Delete(int id)

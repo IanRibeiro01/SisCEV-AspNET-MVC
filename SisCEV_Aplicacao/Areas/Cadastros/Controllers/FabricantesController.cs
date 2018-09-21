@@ -15,12 +15,14 @@ namespace SisCEV_Aplicacao.Areas.Cadastros.Controllers
         private FabricanteServico fabricanteServico = new FabricanteServico();
 
         // Listar
+        [Authorize]
         public ActionResult Index()
         {
             return View(fabricanteServico.ObterTodosFabricantesPorNome());
         }
 
         //Obter Visão do Fabricante
+        [Authorize]
         private ActionResult ObterVisaoFabricantePorId(int? id)
         {
             if (id == null)
@@ -38,6 +40,7 @@ namespace SisCEV_Aplicacao.Areas.Cadastros.Controllers
         }
 
         //Criar e Editar Fabricante
+        [Authorize]
         private ActionResult GravarFabricante(Fabricante fabricante)
         {
             try
@@ -56,12 +59,14 @@ namespace SisCEV_Aplicacao.Areas.Cadastros.Controllers
         }
 
         //Criar
+        [Authorize]
         [HttpGet]
         public ActionResult Create()
         {
             return View();
         }
 
+        [Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create(Fabricante fabricante)
@@ -71,12 +76,14 @@ namespace SisCEV_Aplicacao.Areas.Cadastros.Controllers
 
 
         //Editar
+        [Authorize]
         [HttpGet]
         public ActionResult Edit(int? id)
         {
             return ObterVisaoFabricantePorId(id);
         }
 
+        [Authorize]
         [HttpPost]
         public ActionResult Edit(Fabricante fabricante)
         {
@@ -86,6 +93,7 @@ namespace SisCEV_Aplicacao.Areas.Cadastros.Controllers
 
 
         //Detalhes
+        [Authorize]
         [HttpGet]
         public ActionResult Details(int? id)
         {
@@ -93,12 +101,14 @@ namespace SisCEV_Aplicacao.Areas.Cadastros.Controllers
         }
 
         //Deletar
+        [Authorize]
         public ActionResult Delete(int? id)
         {
             
             return ObterVisaoFabricantePorId(id);
         }
 
+        [Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Delete(int id)

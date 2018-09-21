@@ -18,12 +18,14 @@ namespace SisCEV_Aplicacao.Areas.Cadastros.Controllers
         private CategoriaServico categoriaServico = new CategoriaServico();
 
         // GET: Produtos
+        [Authorize]
         public ActionResult Index()
         {
             return View(produtoServico.ObterTodosProdutosPorNome());
         }
 
         //GET: Obter Visão do Produto
+        [Authorize]
         public ActionResult ObterVisaoProdutoPorId(int? id)
         {
             if (id == null)
@@ -40,6 +42,7 @@ namespace SisCEV_Aplicacao.Areas.Cadastros.Controllers
         }
 
         //Popular ViewBag com DropDownList de associações Fabricante/Categoria 
+        [Authorize]
         private void PopularViewBag(Produto produto = null)
         {
             if(produto == null)
@@ -60,6 +63,7 @@ namespace SisCEV_Aplicacao.Areas.Cadastros.Controllers
         }
 
         //Criar e Editar Produto
+        [Authorize]
         private ActionResult GravarProduto(Produto produto)
         {
             try
@@ -79,12 +83,14 @@ namespace SisCEV_Aplicacao.Areas.Cadastros.Controllers
         }
 
         // GET: Produtos/Details
+        [Authorize]
         public ActionResult Details(int? id)
         {
             return ObterVisaoProdutoPorId(id);
         }
 
         // GET: Produtos/Create
+        [Authorize]
         public ActionResult Create()
         {
             PopularViewBag();
@@ -92,6 +98,7 @@ namespace SisCEV_Aplicacao.Areas.Cadastros.Controllers
         }
 
         // POST: Produtos/Create
+        [Authorize]
         [HttpPost]
         public ActionResult Create(Produto produto)
         {
@@ -99,6 +106,7 @@ namespace SisCEV_Aplicacao.Areas.Cadastros.Controllers
         }
 
         // GET: Produtos/Edit/5
+        [Authorize]
         public ActionResult Edit(int? id)
         {
             PopularViewBag(produtoServico.ObterProdutoPorId((int)id));
@@ -106,6 +114,7 @@ namespace SisCEV_Aplicacao.Areas.Cadastros.Controllers
         }
 
         // POST: Produtos/Edit/5
+        [Authorize]
         [HttpPost]
         public ActionResult Edit(Produto produto)
         {
@@ -113,12 +122,14 @@ namespace SisCEV_Aplicacao.Areas.Cadastros.Controllers
         }
 
         // GET: Produtos/Delete/5
+        [Authorize]
         public ActionResult Delete(int? id)
         {
             return ObterVisaoProdutoPorId(id);
         }
 
         // POST: Produtos/Delete/5
+        [Authorize]
         [HttpPost]
         public ActionResult Delete(int id)
         {
