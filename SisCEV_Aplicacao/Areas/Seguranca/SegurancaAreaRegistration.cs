@@ -17,7 +17,8 @@ namespace SisCEV_Aplicacao.Areas.Seguranca
             context.MapRoute(
                 "Seguranca_default",
                 "Seguranca/{controller}/{action}/{id}",
-                new { action = "Index", id = UrlParameter.Optional }
+                new { controller = "Account", action = "Login", id = UrlParameter.Optional }
+                //namespaces: new[] { "SisCEV_Aplicacao.Areas.Seguranca.Controllers" }
             );
         }
     }

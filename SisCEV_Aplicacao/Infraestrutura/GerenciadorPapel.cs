@@ -2,7 +2,7 @@
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
-using SisCEV_Aplicacao.Areas.Seguranca.Models;
+using SisCEV_Aplicacao.Models;
 using SisCEV_Aplicacao.DAL;
 using System;
 using System.Collections.Generic;

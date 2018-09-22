@@ -1,0 +1,14 @@
+C:\Users\Ian Ribeiro\source\repos\SisCEV-AspNET-MVC\SisCEV_Persistencia\bin\Release\SisCEV_Persistencia.dll.config
+C:\Users\Ian Ribeiro\source\repos\SisCEV-AspNET-MVC\SisCEV_Persistencia\bin\Release\SisCEV_Persistencia.dll
+C:\Users\Ian Ribeiro\source\repos\SisCEV-AspNET-MVC\SisCEV_Persistencia\bin\Release\SisCEV_Persistencia.pdb
+C:\Users\Ian Ribeiro\source\repos\SisCEV-AspNET-MVC\SisCEV_Persistencia\bin\Release\EntityFramework.dll
+C:\Users\Ian Ribeiro\source\repos\SisCEV-AspNET-MVC\SisCEV_Persistencia\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\Ian Ribeiro\source\repos\SisCEV-AspNET-MVC\SisCEV_Persistencia\bin\Release\SisCEV_Modelo.dll
+C:\Users\Ian Ribeiro\source\repos\SisCEV-AspNET-MVC\SisCEV_Persistencia\bin\Release\SisCEV_Modelo.pdb
+C:\Users\Ian Ribeiro\source\repos\SisCEV-AspNET-MVC\SisCEV_Persistencia\bin\Release\EntityFramework.xml
+C:\Users\Ian Ribeiro\source\repos\SisCEV-AspNET-MVC\SisCEV_Persistencia\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\Ian Ribeiro\source\repos\SisCEV-AspNET-MVC\SisCEV_Persistencia\obj\Release\SisCEV_Persistencia.csprojResolveAssemblyReference.cache
+C:\Users\Ian Ribeiro\source\repos\SisCEV-AspNET-MVC\SisCEV_Persistencia\obj\Release\SisCEV_Persistencia.csproj.CoreCompileInputs.cache
+C:\Users\Ian Ribeiro\source\repos\SisCEV-AspNET-MVC\SisCEV_Persistencia\obj\Release\SisCEV_Persistencia.csproj.CopyComplete
+C:\Users\Ian Ribeiro\source\repos\SisCEV-AspNET-MVC\SisCEV_Persistencia\obj\Release\SisCEV_Persistencia.dll
+C:\Users\Ian Ribeiro\source\repos\SisCEV-AspNET-MVC\SisCEV_Persistencia\obj\Release\SisCEV_Persistencia.pdb

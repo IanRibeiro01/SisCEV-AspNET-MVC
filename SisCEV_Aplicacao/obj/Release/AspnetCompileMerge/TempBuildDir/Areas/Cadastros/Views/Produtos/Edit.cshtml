@@ -1,0 +1,53 @@
+﻿@model SisCEV_Modelo.Cadastros.Produto
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "SisCEV - Editar Produtos";
+}
+
+
+@using (Html.BeginForm())
+{
+
+    @Html.AntiForgeryToken()
+
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            Editar Produto
+        </div>
+
+        <div class="panel-body">
+            @Html.Partial("~/Areas/Cadastros/Views/Produtos/_PartialCreateContentPanel.cshtml", Model)
+            @Html.HiddenFor(model => model.ProdutoID)
+        </div>
+
+        <div class="panel-footer panel-body info">
+            <div class="form-group">
+                <div class="col-md-10">
+                    <input type="submit" value="Salvar" class="btn btn-primary" />
+                    @Html.ActionLink("Retornar para listagem", "Index", null, new { @class = "btn btn-warning" })
+                </div>
+            </div>
+        </div>
+    </div>
+
+}
+
+@section styles{
+    @*<link href="~/Scripts/jquery-ui-1.12.1.custom/jquery-ui.css" rel="stylesheet" />*@
+}
+
+@section ScriptPage {
+    @*<script src="~/Scripts/jquery-ui-1.12.1.custom/jquery-ui.js"></script>*@
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('li').removeClass("active");
+            $('#liProdutos').addClass("active");
+        });
+    </script>
+
+}
+
+

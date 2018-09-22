@@ -4,7 +4,7 @@ using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using Microsoft.AspNet.Identity.EntityFramework;
-using SisCEV_Aplicacao.Areas.Seguranca.Models;
+using SisCEV_Aplicacao.Models;
 
 namespace SisCEV_Aplicacao.DAL
 {

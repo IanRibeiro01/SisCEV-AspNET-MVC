@@ -16,14 +16,14 @@ namespace SisCEV_Aplicacao.Areas.Tabelas.Controllers
         private CategoriaServico categoriaServico = new CategoriaServico();
 
         // Listar
-        [Authorize]
+        //[Authorize]
         public ActionResult Index()
         {
             return View(categoriaServico.ObterTodasCategoriasPorNome());
         }
 
         //Obter Visão do Categoria
-        [Authorize]
+        //[Authorize]
         private ActionResult ObterVisaoCategoriaPorId(int? id)
         {
             if (id == null)
@@ -39,7 +39,7 @@ namespace SisCEV_Aplicacao.Areas.Tabelas.Controllers
         }
 
         //Criar e Editar Fabricante
-        [Authorize]
+        //[Authorize]
         private ActionResult GravarCategoria(Categoria categoria)
         {
             try
@@ -58,14 +58,14 @@ namespace SisCEV_Aplicacao.Areas.Tabelas.Controllers
         }
 
         //Criar
-        [Authorize]
+        //[Authorize]
         [HttpGet]
         public ActionResult Create()
         {
             return View();
         }
 
-        [Authorize]
+        //[Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create(Categoria categoria)

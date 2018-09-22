@@ -308,11 +308,13 @@
     <Content Include="Areas\Cadastros\Views\web.config" />
     <Content Include="Areas\Tabelas\Views\web.config" />
     <Content Include="Areas\Seguranca\Views\web.config" />
-    <Content Include="Areas\Seguranca\Views\Admin\Index.cshtml" />
-    <Content Include="Areas\Seguranca\Views\Admin\Create.cshtml" />
-    <Content Include="Areas\Seguranca\Views\Admin\Edit.cshtml" />
-    <Content Include="Areas\Seguranca\Views\Admin\Delete.cshtml" />
-    <Content Include="Areas\Seguranca\Views\Account\Login.cshtml" />
+    <Content Include="Views\Admin\Index.cshtml" />
+    <Content Include="Views\Admin\Create.cshtml" />
+    <Content Include="Views\Admin\Edit.cshtml" />
+    <Content Include="Views\Admin\Delete.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
+    <None Include="Properties\PublishProfiles\SisCEV - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\SisCEV - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -356,11 +358,11 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Cadastros\CadastrosAreaRegistration.cs" />
-    <Compile Include="Areas\Seguranca\Controllers\AccountController.cs" />
-    <Compile Include="Areas\Seguranca\Controllers\AdminController.cs" />
-    <Compile Include="Areas\Seguranca\Models\Papel.cs" />
-    <Compile Include="Areas\Seguranca\Models\SgurancaViewModels.cs" />
-    <Compile Include="Areas\Seguranca\Models\Usuario.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Models\Papel.cs" />
+    <Compile Include="Models\SgurancaViewModels.cs" />
+    <Compile Include="Models\Usuario.cs" />
     <Compile Include="Areas\Seguranca\SegurancaAreaRegistration.cs" />
     <Compile Include="Areas\Tabelas\TabelasAreaRegistration.cs" />
     <Compile Include="Areas\Tabelas\Controllers\CategoriasController.cs" />
@@ -427,16 +429,20 @@
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Cadastros\Models\" />
     <Folder Include="Areas\Cadastros\Views\Shared\" />
+    <Folder Include="Areas\Seguranca\Controllers\" />
+    <Folder Include="Areas\Seguranca\Models\" />
     <Folder Include="Areas\Seguranca\Views\Shared\" />
     <Folder Include="Areas\Tabelas\Models\" />
     <Folder Include="Areas\Tabelas\Views\Shared\" />
-    <Folder Include="Models\" />
-    <Folder Include="Views\Controllers\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SisCEV_Modelo\SisCEV_Modelo.csproj">
       <Project>{443fe8eb-d072-4f3c-8fd4-a58af6219945}</Project>
       <Name>SisCEV_Modelo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SisCEV_Persistencia\SisCEV_Persistencia.csproj">
+      <Project>{5284ec13-b8a0-43d0-8546-3387f1af378e}</Project>
+      <Name>SisCEV_Persistencia</Name>
     </ProjectReference>
     <ProjectReference Include="..\SisCEV_Servico\SisCEV_Servico.csproj">
       <Project>{4ec82a19-9f4e-4f50-b140-64de26798966}</Project>
